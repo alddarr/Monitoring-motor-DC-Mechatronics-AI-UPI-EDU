@@ -1,33 +1,28 @@
-# Monitoring-motor-DC-Mechatronics-AI-UPI-EDU
-Repository ini merupakan dokumentasi projek UAS mata kuliah Sensor dan Tranduser.
+# Monitoring Arus, Daya, Tegangan dan Kecepatan Motor DC Menggunakan NodeMCU ESP8266 Yang Terintegrasi Dengan Database Mysql
 
-Anggota Tim :
+Repository ini merupakan dokumentasi projek UAS Kelompok 5 pada mata kuliah Sensor dan Tranduser.
+
+Anggota Tim:
 ```
-Geralda Livia Nugraha (2100179)
+<li> Geralda Livia Nugraha (2100179) </li>
 ```
+<li> RAMADHIRRA AZZAHRA PUTRI (2100188) </li>
 ```
-RAMADHIRRA AZZAHRA PUTRI (2100188)
+<li> Vinka Reviansa (2101918) </li>
 ```
+<li> MUHAMMAD WILDAN ALFARIZY (2106373) </li>
 ```
-Vinka Reviansa (2101918)
-```
-```
-MUHAMMAD WILDAN ALFARIZY (2106373)
-```
-```
-MUHAMMAD MIZANULKHAIR (2107620)
-```
+<li> MUHAMMAD MIZANULKHAIR (2107620) </li>
 ---
-## I. Monitoring Arus, Daya, Tegangan dan Kecepatan Motor DC Menggunakan NodeMCU ESP8266 Yang Terintegrasi Dengan Database Mysql
 
 ## II.Latar Belakang
 
-Seiring Perkembangan teknologi memungkinkan dibuat perangkat pengendali dengan ukuran yang kecil tetapi memiliki kemampuan komputasi, kecepatan, dan keandalan sertaefisiensi yang tinggi. salah satunya yaitu pengendali motor DC yang banyak digunakan dalam berbagai bidang mulai dari peralatan industri sampai rumah tangga. pada praktikum kali ini kami akan menggunakan sistem hardware yang terdiri dari Sistem hardware terdiri NodeMCU ESP8266 , Sensor INA219 dan Speed Sensor LM393. Sistem hardware berfungsi untuk mengukur Tegangan dan Arus (Sensor INA219) dan mengukur kecepatan motor (Sensor LM393) kemudian nilai yang dibaca oleh sensor akan diolah datanya pada NodeMCU ESP8266 setelah itu NodeMCU ESP8266 akan mengirim datake database MySQL. 
+Perkembangan teknologi saat ini memungkinkan terciptanya sebuah perangkat pengendali dengan ukuran yang kecil tetapi memiliki kemampuan komputasi, kecepatan, dan keandalan serta efisiensi yang tinggi. salah satunya yaitu pengendali motor DC yang banyak digunakan dalam berbagai bidang mulai dari  industri sampai rumah tangga. Pada praktikum kali ini kami akan menggunakan sistem hardware yang terdiri dari Sistem hardware terdiri NodeMCU ESP8266, Sensor INA219, dan Speed Sensor LM393. Sistem hardware berfungsi untuk mengukur Tegangan dan Arus (Sensor INA219) serta mengukur kecepatan motor (Sensor LM393). Kemudian nilai yang dibaca oleh sensor akan diolah datanya pada NodeMCU ESP8266 setelah itu NodeMCU ESP8266 akan mengirim datake database MySQL. 
 
 ## Wiring Diagram
 > <img alt="Wiring Diagram" src="https://i.postimg.cc/nLskN6dt/Whats-App-Image-2022-06-12-at-18-18-55.jpg" width="70%" height="70%">
 
-## IV. Analisis dan Diskusi Project
+## Analisis dan Diskusi Project
 > 1. Pertama NodeMCU ESP8266 akan menghubungkan jaringan ke wifi dan server. Jika tidak terhubung maka akan dilakukan konektivitas ulang hingga NodeMCU terhubung, jika terhubung maka akan dilakukan langkah selanjutnya.
 > 2. Selanjutnya NodeMCU akan mendeteksi apakah sensor INA219 dan LM393 sudah terhubung dengan baik dan inisialisasi pin sensor.
 > 3. Selanjutnya Sensor INA219 akan membaca nilai tegangan dan arus dan sensor LM393 akan membaca nilai kecepatan.
@@ -37,7 +32,7 @@ Seiring Perkembangan teknologi memungkinkan dibuat perangkat pengendali dengan u
 
 > Dari perancangan dan pengujian aplikasi monitoring yang telah dilakukan, terhadap fitur-fitur pada sistem monitoring berbasis website, semua fitur dapat berjalan sebagaimana mestinya. Monitoring arus, tegangan, daya dan kecepatan motor secara otomatis menggunakan sensor INA219 dan speed sensor LM393 dan mengirimkan ke database Mysql. Data dikirim dari database ke Web menggunakan software Visual Code dengan menggunakan bahasa HTML dan CSS dan menghasilkan tampilan nilai dan grafik hasil pengukuran .
 
-## V. Referensi
+## Referensi
  
 > + https://www.nyebarilmu.com/apa-itu-module-nodemcu-esp8266/#:~:text=NodeMCU%C2%A0ESP8266%C2%A0merupakan%20modul%20turunan%20pengembangan%20dari%20modul%20platform%20IoT,yang%20membedakan%20yaitu%20dikhususkan%20untuk%20%E2%80%9CConnected%20to%20Internet%E2%80%9C.
 
